@@ -20,7 +20,7 @@ export default function ParticipantContent() {
   return (
     <div className="flex h-full">
       <div className="flex flex-col justify-center bg-sky-100 p-10 gap-8">
-        <div className="bg-gradient-to-r from-red-400 to-red-50 bg-clip-text text-transparent text-4xl font-semibold">
+        <div className="w-48 bg-gradient-to-r from-red-500 to-red-200 bg-clip-text text-transparent text-4xl font-semibold">
           {participants_contents.title}
         </div>
         {participants_contents.content.map((content, index) => (
@@ -37,7 +37,7 @@ export default function ParticipantContent() {
         </Link>
       </div>
       <div className="flex flex-col justify-center bg-sky-200 p-10 gap-8">
-        <div className="bg-gradient-to-r from-cyan-600 to-red-50 bg-clip-text text-transparent text-4xl font-semibold">
+        <div className="w-44 bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent text-4xl font-semibold">
           {facilitator_contents.title}
         </div>
         {facilitator_contents.content.map((content, index) => (
