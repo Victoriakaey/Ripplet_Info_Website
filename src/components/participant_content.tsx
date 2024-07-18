@@ -24,7 +24,9 @@ export default function ParticipantContent() {
           {participants_contents.title}
         </div>
         {participants_contents.content.map((content, index) => (
-          <div className="font-extralight">{content}</div>
+          <div key={index} className="font-extralight">
+            {content}
+          </div>
         ))}
         <Link
           href={links.join_as_participant}
@@ -39,7 +41,9 @@ export default function ParticipantContent() {
           {facilitator_contents.title}
         </div>
         {facilitator_contents.content.map((content, index) => (
-          <div className="font-extralight">{content}</div>
+          <div key={index} className="font-extralight">
+            {content}
+          </div>
         ))}
         <Link
           href={links.join_as_facilitator}
