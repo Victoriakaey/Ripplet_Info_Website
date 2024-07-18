@@ -5,7 +5,7 @@ import RedBookButton from "@/components/red_book_button";
 
 export default function ContactButtons() {
   return (
-    <div className="flex ml-4">
+    <div className="flex ml-4 fixed bottom-8 left-5">
       <LinkedInButton />
       <WechatButton />
       <RedBookButton />

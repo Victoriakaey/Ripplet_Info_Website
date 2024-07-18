@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import { LanguageProvider } from "@/context/language_context";
+import TranslateButton from "@/components/translate_button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +22,13 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-gradient-to-r from-cyan-100 to-blue-300 `}
       >
-        <Navbar />
-        <div className="h-full">{children}</div>
+        <LanguageProvider>
+          <Navbar />
+          <div className="h-full">
+            {children}
+            <TranslateButton />
+          </div>
+        </LanguageProvider>
       </body>
     </html>
   );
