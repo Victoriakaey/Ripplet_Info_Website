@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main className="h-screen flex flex-col justify-center">
-      <div className="p-10">
+      <div className="p-16 md:p-20">
         {contents.map((content, index) => (
           <div key={index} className="flex flex-col gap-2">
             <div className="ml-[0.4rem] text-4xl font-semibold text-slate-600">
@@ -25,7 +25,7 @@ export default function Home() {
               >
                 {content.highlight}
               </div>
-              <div className="text-xl md:text-2xl lg:text-3xl font-extralight italic text-slate-600">
+              <div className="text-lg md:text-2xl lg:text-3xl font-extralight italic text-slate-600">
                 {content.normal}
               </div>
             </div>
