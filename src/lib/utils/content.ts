@@ -1,14 +1,15 @@
 // Type
-export type navbar = {
-    label: string,
-    link: string,
-    button: boolean,
-};
-
 export type ripplet_introduction = {
     highlight?: string,
     bold?: string,
     normal: string,
+    color?: string,
+};
+
+export type navbar = {
+    label: string,
+    link: string,
+    button: boolean,
 };
 
 export type about_us = {
@@ -45,14 +46,17 @@ export const en_ripplet_introduction: ripplet_introduction[] = [
     {
         highlight: "Embrace",
         normal: "your feelings",
+        color: "text-red-500"
     },
     {
         highlight: "Vocalize",
         normal: "your journey",
+        color: "text-orange-400"
     },
     {
         highlight: "Support",
-        normal: "your community"
+        normal: "your community",
+        color: "text-purple-800"
     }
 ];
 
@@ -105,10 +109,10 @@ export const cn_navbar: navbar[] = [
     },
 ];
 
-export const cn_ripplet_introduction: ripplet_introduction = {
+export const cn_ripplet_introduction: ripplet_introduction[] = [{
     bold: "认知，分享，互助",
     normal: "Ripplet让你在自我关怀的路上不再孤单"
-};
+}];
 
 export const cn_about_us: about_us = {
     title: "关于我们",

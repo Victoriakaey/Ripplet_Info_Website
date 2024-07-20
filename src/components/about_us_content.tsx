@@ -8,9 +8,11 @@ export default function AboutUsContent() {
   const contents = language === "en" ? en_about_us : cn_about_us;
   return (
     <div className="flex flex-col gap-6 text-slate-600">
-      <div className="font-semibold text-4xl">{contents.title}</div>
+      <div className="text-4xl">{contents.title}</div>
       {contents.content.map((content, index) => (
-        <div key={index}>{content}</div>
+        <div key={index} className="font-extralight">
+          {content}
+        </div>
       ))}
     </div>
   );

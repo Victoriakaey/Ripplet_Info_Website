@@ -14,7 +14,7 @@ export default function Navbar() {
   const navbar = language === "en" ? en_navbar : cn_navbar;
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="fixed top-0 w-full bg-white shadow-md z-50">
+    <div className="fixed top-0 w-full bg-white shadow-md z-50 select-none">
       <div className="h-12 flex justify-between items-center">
         <Link href="/">
           <Image
