@@ -24,7 +24,7 @@ export default function RootLayout({
       >
         <LanguageProvider>
           <Navbar />
-          <div className="h-full">
+          <div className="h-full pt-12 lg:pt-0">
             {children}
             <TranslateButton />
           </div>

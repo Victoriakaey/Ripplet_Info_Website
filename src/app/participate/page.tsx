@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Participate() {
   return (
-    <main className="h-screen flex flex-col justify-center">
+    <main className="min-h-screen flex items-stretch">
       <ParticipantContent />
     </main>
   );
