@@ -1,4 +1,5 @@
 "use client";
+import HomePage from "@/components/home_page";
 import { LanguageContext } from "@/context/language_context";
 import {
   cn_ripplet_introduction,
@@ -32,6 +33,7 @@ export default function Home() {
           </div>
         ))}
       </div>
+      {/* <HomePage /> */}
     </main>
   );
 }
