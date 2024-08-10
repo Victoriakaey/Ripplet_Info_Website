@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <main className="h-screen flex flex-col justify-center">
-      <div className="p-16 md:p-20">
+      {/* <div className="p-16 md:p-20">
         {contents.map((content, index) => (
           <div key={index} className="flex flex-col gap-2">
             <div className="ml-[0.4rem] text-4xl font-semibold text-slate-600">
@@ -32,8 +32,8 @@ export default function Home() {
             </div>
           </div>
         ))}
-      </div>
-      {/* <HomePage /> */}
+      </div> */}
+      <HomePage />
     </main>
   );
 }
