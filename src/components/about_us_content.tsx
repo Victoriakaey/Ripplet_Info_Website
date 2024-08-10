@@ -7,10 +7,10 @@ export default function AboutUsContent() {
   const { language } = useContext(LanguageContext);
   const contents = language === "en" ? en_about_us : cn_about_us;
   return (
-    <div className="flex flex-col gap-12 text-slate-600 p-14">
-      <div className="text-7xl font-bold">{contents.title}</div>
+    <div className="flex flex-col gap-6 text-slate-600">
+      <div className="text-4xl">{contents.title}</div>
       {contents.content.map((content, index) => (
-        <div key={index} className="font-extralight text-3xl">
+        <div key={index} className="font-extralight">
           {content}
         </div>
       ))}
