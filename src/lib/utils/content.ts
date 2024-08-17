@@ -1,134 +1,4 @@
 // Type
-export type ripplet_introduction = {
-    highlight?: string,
-    bold?: string,
-    normal: string,
-    color?: string,
-};
-
-export type navbar = {
-    label: string,
-    link: string,
-    button: boolean,
-};
-
-export type about_us = {
-    title: string,
-    content: string[],
-};
-
-export type participate = {
-    title: string,
-    content: string[],
-    button_text: string,
-};
-
-// English Content  
-export const en_navbar: navbar[] = [
-    {
-        label: "About Us",
-        link: "/about",
-        button: false
-    },
-    {
-        label: "Participate",
-        link: "/participate",
-        button: true
-    },
-];
-
-export const en_ripplet_introduction: ripplet_introduction[] = [
-    {
-        highlight: "Embrace",
-        normal: "your feelings",
-        color: "text-red-500"
-    },
-    {
-        highlight: "Vocalize",
-        normal: "your journey",
-        color: "text-orange-400"
-    },
-    {
-        highlight: "Support",
-        normal: "your community",
-        color: "text-purple-800"
-    }
-];
-
-export const en_about_us: about_us = {
-    title: "About Ripplet",
-    content: [
-        "Ripplet is a community-initiated wellness platform for Chinese speakers across the globe, in relevance to our own cultures and beliefs.", 
-        "We understand the mental health needs and challenges for people with Asian backgrounds, and we are dedicated to raising self-care awareness by providing a safe space to express personal feelings, share self-care journeys, and receive culturally aware emotional support.",
-        "Founded in 2023, we have an extensive network of survivors and peer support specialists to provide timely help on your wellness journey."
-    ]
-};
-
-export const en_participant: participate = {
-    title: "Participant",
-    content: [
-        "We are looking for participants aged 18 to 25 to participate in our small-sized peer support groups.", 
-        "The cohort will happen every Saturday or Sunday for 5 weeks, in the form of 5 support group meetings with a total of 5 themes.",
-        "Participants could choose to participate in one or more topics of interest."
-    ],
-    button_text: "Join as participant"
-};
-
-export const en_facilitator: participate = {
-    title: "Facilitator",
-    content: [
-        "We are looking for peer support specialists and future practitioners to join our supporter team.",
-        "While we prioritize those with experiences, it is not a requirement as training will be provided if you are selected to participate in our program.",
-        "We will reach out to you at our earliest convenience after you sign up.",
-    ],
-    button_text: "Join as facilitator"
-};
-
-// Chinese Content
-export const cn_navbar: navbar[] = [
-    {
-        label: "关于我们",
-        link: "/about",
-        button: false
-    },
-    {
-        label: "加入我们",
-        link: "/participate",
-        button: true
-    },
-];
-
-export const cn_ripplet_introduction: ripplet_introduction[] = [{
-    bold: "认知，分享，互助",
-    normal: "Ripplet让你在自我关怀的路上不再孤单"
-}];
-
-export const cn_about_us: about_us = {
-    title: "关于我们",
-    content: [
-        "Ripplet 为年轻华人群体提供一个安全的空间，让大家在自我成长的路上可以获得温暖的支持和陪伴。",
-        "Ripplet成立于2023年，旨在为全球年轻华人提供实时且有效的情感支持。我们致力于构建一个安全的环境，使人们能够没有负担地表达感受，分享自我成长的经历，并在这个过程中找到共鸣和回应。",
-        "我们希望在华人心理专家和朋辈的陪伴下，大家能在被深度共情的过程中养成关爱自我的习惯，并最终基于强烈的自我认同感去在现实生活中建立深度的社交关系。",
-    ]
-};
-
-export const cn_participant: participate = {
-    title: "小涟漪",
-    content: [
-        "我们正在寻找18-25岁的华人加入“涟漪计划”。活动将在周末进行，为期5周。参与者可以在5个主题中，选择一场或多场感兴趣的活动参加。我们的小组会将由拥有同辈支持经验的心理从业人员带领，大家可以从个人经历出发，在讨论中找寻共鸣。",
-    ],
-    button_text: "成为参与者",
-};
-
-export const cn_facilitator: participate = {
-    title: "小水滴",
-    content: [
-        "与此同时，我们也在招募正在受训/持证的心理咨询师，社会工作者和心理学家。无论你有没有朋辈支持的经验，如果你对我们的项目感兴趣的话，都欢迎你在这里上传简历。我们之后会联系你提供进一步的朋辈支持者培训。",
-    ],
-    button_text: "成为激励者",
-};
-
-// ----------------------------------- new contents ----------------------------------------
 
 export type home_page_type = {
     title: string,
@@ -143,6 +13,45 @@ export type card_type = {
     content_short_version: string,
     content_complete_version: string[],
 }
+
+export type navbar = {
+    label: string,
+    link: string,
+    button: boolean,
+};
+
+export type contents = {
+    title: string,
+    content: string[],
+    button_text?: string,
+    button_link?: string,
+};
+
+export const en_navbar: navbar[] = [
+    {
+        label: "About Us",
+        link: "/about",
+        button: false
+    },
+    {
+        label: "Participate",
+        link: "/participate",
+        button: true
+    },
+];
+
+export const cn_navbar: navbar[] = [
+    {
+        label: "关于我们",
+        link: "/about",
+        button: false
+    },
+    {
+        label: "加入我们",
+        link: "/participate",
+        button: true
+    },
+];
 
 export const en_home_page: home_page_type = {
     title: "Empower Your Journey of Self-Growth",
@@ -223,7 +132,7 @@ export const cn_challenge: card_type = {
     ]
 }
 
-export const en_new_about_us: about_us = {
+export const en_about_us: contents = {
     title: "About Ripplet",
     content: [
         "Our platform creates a supportive environment where users can enhance their emotional awareness, effectively manage their energy levels, and cultivate resilience.",
@@ -233,7 +142,7 @@ export const en_new_about_us: about_us = {
     ]
 };
 
-export const cn_new_about_us: about_us = {
+export const cn_about_us: contents = {
     title: "关于我们",
     content: [
         "Ripplet致力于让全球年轻华语群体在自我成长的旅途中不再感到孤单。我们通过日志引导、社区支持和专家辅助等方式，从情感和认知层面为大家赋能。",
@@ -244,7 +153,7 @@ export const cn_new_about_us: about_us = {
 
 
 
-export const en_storytellers: participate = {
+export const en_storytellers: contents = {
     title: "Storytellers",
     content: [
         "Are you a Chinese speaker with an inspiring story of personal growth? Join our vibrant community and share your unique experiences on WeChat or RED. Your journey could inspire and uplift others, offering guidance and hope to those on similar paths.",
@@ -252,18 +161,20 @@ export const en_storytellers: participate = {
         "Help us create a tapestry of stories that resonate, empower, and transform lives. Together, we can make a meaningful impact and build a supportive community that celebrates every journey."
     ],
     button_text: "Become a Storyteller",
+    button_link: "https://forms.gle/QRr8CVrVRWQfCNxd9",
 };
 
-export const cn_storytellers: participate = {
+export const cn_storytellers: contents = {
     title: "讲述者",
     content: [
         "你有或激励人心或深刻温暖的成长故事想要分享吗？我们诚挚地邀请你加入我们，在微信公众号和小红书平台上分享你的故事，让你的经历能激励更多同辈前行。如果你愿意用声音讲述你的故事，我们也欢迎你成为Ripplet播客节目的分享嘉宾，一起点亮灯塔，为更广泛的听众照亮前行的方向。",
         "加入我们，共同编织一个能够引起共鸣、为他人赋能的故事集。我们一起在更广阔的空间泛起涟漪，带来影响，建立一个互相支持的社区，庆祝珍惜每一段人生旅程。",
     ],
     button_text: "成为讲述者",
+    button_link: "https://forms.gle/QRr8CVrVRWQfCNxd9",
 };
 
-export const en_new_facilitators: participate = {
+export const en_facilitators: contents = {
     title: "Facilitators",
     content: [
         "Are you passionate about helping others and making a difference? We're looking for enthusiastic individuals to join our growing support team! If you’re an aspiring counselor or clinical social worker, this is a fantastic opportunity to get involved and make an impact on the Chinese-speaking community.",
@@ -271,9 +182,10 @@ export const en_new_facilitators: participate = {
         "If you’re ready to embark on this rewarding journey, sign up using the link below, and we'll reach out to you soon!"
     ],
     button_text: "Become a Facilitator",
+    button_link: "https://forms.gle/Ah3mZUJwWYp93Dv8A",
 };
 
-export const cn_new_facilitators: participate = {
+export const cn_facilitators: contents = {
     title: "支持者",
     content: [
         "我们正在寻找对心理行业充满热情的朋辈支持者加入我们的团队！如果你是未来的心理咨询师或临床社会工作者，我们非常欢迎你在项目早期阶段参与进来。",
@@ -281,4 +193,5 @@ export const cn_new_facilitators: participate = {
         "如果你感兴趣，请戳以下的链接报名，我们会尽快与您联系。",
     ],
     button_text: "成为支持者",
+    button_link: "https://forms.gle/Ah3mZUJwWYp93Dv8A",
 };
