@@ -1,5 +1,5 @@
 // TODO: still need to make responsiveness
-import React, { useState } from "react";
+import React from "react";
 import { card_type } from "@/lib/utils/content";
 import Image, { StaticImageData } from "next/image";
 
@@ -14,7 +14,9 @@ interface cardProps {
 export default function Card(props: cardProps) {
   return (
     <div className="bg-white w-[23rem] h-[23rem] rounded-2xl shadow-md p-11 flex flex-col gap-2 items-center justify-center text-ripplet-text">
-      <p className="text-2xl font-bold mb-3">{props.card_content.title}</p>
+      <p className="text-2xl font-bold mb-4 -mt-2">
+        {props.card_content.title}
+      </p>
       <Image
         src={props.image}
         alt={props.image_alt}

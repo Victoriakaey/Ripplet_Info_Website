@@ -1,10 +1,8 @@
+"use client";
 // TODO: still need to make responsiveness
 import React, { useContext } from "react";
 import Card from "./card";
 import { LanguageContext } from "@/context/language_context";
-import { BsPeople } from "react-icons/bs";
-import { TbSchool } from "react-icons/tb";
-import { PiSmileyStickerBold } from "react-icons/pi";
 import {
   cn_challenge,
   cn_journal,
@@ -41,8 +39,8 @@ export default function CardList() {
       <Card
         card_content={challenge}
         image={expert_led_challenges}
-        image_width={170}
-        image_height={170}
+        image_width={160}
+        image_height={160}
         image_alt="expert-led challenges image"
       />
     </div>
