@@ -8,7 +8,7 @@ export default function RedBookButton() {
     <Link
       href={links.red_book}
       target="_blank"
-      className="bg-slate-600 p-[0.4rem] rounded-full shadow-xl hover:bg-slate-400 hover:text-slate-950 text-white hover:cursor-pointer ml-4"
+      className="bg-ripplet-text hover:bg-ripplet-text/80 p-2 rounded-full shadow-xl text-white hover:cursor-pointer ml-4"
     >
       <SiXiaohongshu className="text-2xl" />
     </Link>

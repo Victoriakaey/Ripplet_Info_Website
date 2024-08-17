@@ -31,7 +31,7 @@ export default function ParticipantContent() {
           </div>
         ))}
         <Link
-          href={links.join_as_participant}
+          href={links.join_as_storyteller}
           target="_blank"
           className="bg-red-400 rounded-full text-center p-2 w-full lg:w-1/3 text-white hover:bg-red-300"
         >

@@ -40,7 +40,7 @@ export default function Navbar() {
             <Link
               key={index}
               href={item.link}
-              target={item.button ? "_blank" : ""}
+              // target={item.button ? "_blank" : ""}
               className={
                 item.button
                   ? "bg-ripplet-button rounded-full py-2 px-7 text-ripplet-text font-semibold mt-3 mb-1 hover:bg-red-400 hover:text-white"

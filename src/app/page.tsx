@@ -1,6 +1,6 @@
 "use client";
-import CardList from "@/components/card_list";
-import HomePageHeading from "@/components/home_page_heading";
+import CardList from "@/components/home/card_list";
+import HomePageHeading from "@/components/home/home_page_heading";
 import React from "react";
 
 export default function Home() {

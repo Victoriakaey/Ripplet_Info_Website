@@ -56,7 +56,7 @@ export const en_ripplet_introduction: ripplet_introduction[] = [
 ];
 
 export const en_about_us: about_us = {
-    title: "About Us",
+    title: "About Ripplet",
     content: [
         "Ripplet is a community-initiated wellness platform for Chinese speakers across the globe, in relevance to our own cultures and beliefs.", 
         "We understand the mental health needs and challenges for people with Asian backgrounds, and we are dedicated to raising self-care awareness by providing a safe space to express personal feelings, share self-care journeys, and receive culturally aware emotional support.",
@@ -223,18 +223,26 @@ export const cn_challenge: card_type = {
     ]
 }
 
-export const en_new_about_us: string[] = [
-    "Our platform creates a supportive environment where users can enhance their emotional awareness, effectively manage their energy levels, and cultivate resilience.",
-    "Through guided journaling prompts, community support, and expert-led challenges, Ripplet offers a comprehensive approach to personal development tailored specifically for young Chinese speakers.",
-    "We celebrate the uniqueness of each journey and encourage meaningful interactions that inspire growth and resilience.",
-    "We are dedicated to offering resources and guidance that promote mental well-being, helping you navigate life's challenges with confidence and clarity. Join us at Ripplet, where your journey toward a fulfilling and balanced life is supported every step of the way.",
-]
+export const en_new_about_us: about_us = {
+    title: "About Ripplet",
+    content: [
+        "Our platform creates a supportive environment where users can enhance their emotional awareness, effectively manage their energy levels, and cultivate resilience.",
+        "Through guided journaling prompts, community support, and expert-led challenges, Ripplet offers a comprehensive approach to personal development tailored specifically for young Chinese speakers.",
+        "We celebrate the uniqueness of each journey and encourage meaningful interactions that inspire growth and resilience. We are dedicated to offering resources and guidance that promote mental well-being, helping you navigate life's challenges with confidence and clarity.",
+        "Join us at Ripplet, where your journey toward a fulfilling and balanced life is supported every step of the way.",
+    ]
+};
 
-export const cn_new_about_us: string[] = [
-    "Ripplet致力于让全球年轻华语群体在自我成长的旅途中不再感到孤单。我们通过日志引导、社区支持和专家辅助等方式，从情感和认知层面为大家赋能。",
-    "我们提供一个安全私密的空间，来帮助你深入觉知内心情绪，记录自我成长历程，并提供相应资源来辅助你的行为和决策。我们会悉心倾听各类独特的故事，于个体的差异之中探寻群体间的关联，让力量得以传递。我们整合与心理健康相关的自救资源以及专业指导，协助您从容应对生活中的种种挑战。",
-    "在这里，我们荡起的涟漪将成为同频的共振。我们在这共振的一圈圈陪伴中探索连接，在安全的连接中开启新的旅程。",
-]
+export const cn_new_about_us: about_us = {
+    title: "关于我们",
+    content: [
+        "Ripplet致力于让全球年轻华语群体在自我成长的旅途中不再感到孤单。我们通过日志引导、社区支持和专家辅助等方式，从情感和认知层面为大家赋能。",
+        "我们提供一个安全私密的空间，来帮助你深入觉知内心情绪，记录自我成长历程，并提供相应资源来辅助你的行为和决策。我们会悉心倾听各类独特的故事，于个体的差异之中探寻群体间的关联，让力量得以传递。我们整合与心理健康相关的自救资源以及专业指导，协助您从容应对生活中的种种挑战。",
+        "在这里，我们荡起的涟漪将成为同频的共振。我们在这共振的一圈圈陪伴中探索连接，在安全的连接中开启新的旅程。",
+    ]
+};
+
+
 
 export const en_storytellers: participate = {
     title: "Storytellers",
@@ -243,7 +251,7 @@ export const en_storytellers: participate = {
         "If you're willing to share your voice on our podcast, we can reach an even broader audience. Your story might light the way for others, providing the motivation they need to pursue their own growth.",
         "Help us create a tapestry of stories that resonate, empower, and transform lives. Together, we can make a meaningful impact and build a supportive community that celebrates every journey."
     ],
-    button_text: "Join as storyteller",
+    button_text: "Become a Storyteller",
 };
 
 export const cn_storytellers: participate = {
@@ -262,7 +270,7 @@ export const en_new_facilitators: participate = {
         "For those interested in peer support, prior experience is a bonus, but it’s not required—we’ll provide comprehensive training for selected candidates in Summer 2025. This is your chance to develop valuable skills, connect with like-minded individuals, and contribute to a community dedicated to personal growth and empowerment.",
         "If you’re ready to embark on this rewarding journey, sign up using the link below, and we'll reach out to you soon!"
     ],
-    button_text: "Join as facilitator",
+    button_text: "Become a Facilitator",
 };
 
 export const cn_new_facilitators: participate = {
