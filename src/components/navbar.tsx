@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <div className="fixed w-full bg-white z-50 select-none px-9">
-      <div className="h-18 flex justify-between items-center">
+      <div className="h-16 flex justify-between items-center mb-2">
         <Link href="/">
           <Image
             src={logo}
