@@ -15,8 +15,8 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="fixed w-full bg-white z-50 select-none px-9">
-      <div className="mt-3 mb-3 h-12 flex justify-between items-center">
+    <div className="fixed w-full bg-transparent backdrop-blur-sm z-50 select-none px-9">
+      <div className="h-18 flex justify-between items-center">
         <Link href="/">
           <Image
             src={logo}

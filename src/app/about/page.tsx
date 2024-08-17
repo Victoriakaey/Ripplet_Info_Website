@@ -10,11 +10,11 @@ export default function About() {
   const { language } = useContext(LanguageContext);
   const contents = language === "en" ? en_about_us : cn_about_us;
   return (
-    <main className="h-screen flex flex-col justify-center">
+    <main className="h-screen flex flex-col justify-center px-56">
       <Content
         image={about_ripplet_image}
         image_alt="about ripplet image"
-        image_width={430}
+        image_width={500}
         contents={contents}
       />
       <ContactButtons />

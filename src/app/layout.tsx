@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen`}>
         <LanguageProvider>
           <Navbar />
-          <div className="h-full pt-12 lg:pt-0">
+          <div className="h-full lg:pt-0">
             {children}
             <TranslateButton />
           </div>
