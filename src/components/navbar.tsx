@@ -13,15 +13,16 @@ export default function Navbar() {
   const { language } = useContext(LanguageContext);
   const navbar = language === "en" ? en_navbar : cn_navbar;
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="fixed top-0 w-full bg-white shadow-md z-50 select-none">
-      <div className="h-12 flex justify-between items-center">
+    <div className="fixed w-full bg-white z-50 select-none px-9">
+      <div className="mt-3 mb-3 h-12 flex justify-between items-center">
         <Link href="/">
           <Image
             src={logo}
             alt="ripplet logo image"
-            width={124}
-            className="ml-6"
+            width={200}
+            className="ml-4 md:ml-6"
           />
         </Link>
         {/* Hamburger Menu Icon */}
@@ -34,7 +35,7 @@ export default function Navbar() {
           </button>
         </div>
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-10 mr-8">
+        <div className="hidden md:flex gap-12 mr-8 text-lg">
           {navbar.map((item, index) => (
             <Link
               key={index}
@@ -42,8 +43,8 @@ export default function Navbar() {
               target={item.button ? "_blank" : ""}
               className={
                 item.button
-                  ? "bg-red-400 rounded-full py-2 px-4 text-white mt-1 mb-1 hover:bg-sky-600"
-                  : "mt-3 hover:text-red-400"
+                  ? "bg-ripplet-button rounded-full py-2 px-7 text-ripplet-text font-semibold mt-3 mb-1 hover:bg-red-400 hover:text-white"
+                  : "font-semibold mt-5 hover:text-red-400"
               }
             >
               {item.label}

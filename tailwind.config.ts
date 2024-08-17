@@ -12,7 +12,14 @@ const config: Config = {
     "text-purple-800",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'ripplet-purple': '#F1E8FF',
+        'ripplet-blue': '#EFF9FF',
+        'ripplet-text': '#1E4264',
+        'ripplet-button': '#75B8EE',
+      }
+    },
   },
   plugins: [],
 };

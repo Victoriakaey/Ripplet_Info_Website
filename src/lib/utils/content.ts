@@ -26,18 +26,13 @@ export type participate = {
 // English Content  
 export const en_navbar: navbar[] = [
     {
-        label: "Participate",
-        link: "/participate",
-        button: false
-    },
-    {
         label: "About Us",
         link: "/about",
         button: false
     },
     {
-        label: "Join the beta",
-        link: "https://forms.gle/RYuNdLpzugrCPdA28",
+        label: "Participate",
+        link: "/participate",
         button: true
     },
 ];
@@ -92,18 +87,13 @@ export const en_facilitator: participate = {
 // Chinese Content
 export const cn_navbar: navbar[] = [
     {
-        label: "加入",
-        link: "/participate",
-        button: false
-    },
-    {
         label: "关于我们",
         link: "/about",
         button: false
     },
     {
-        label: "加入试用",
-        link: "/https://forms.gle/RYuNdLpzugrCPdA28",
+        label: "加入我们",
+        link: "/participate",
         button: true
     },
 ];
@@ -144,6 +134,7 @@ export type home_page_type = {
     title: string,
     content: string,
     button_text: string,
+    button_link: string,
 }
 
 export type card_type = {
@@ -156,13 +147,15 @@ export type card_type = {
 export const en_home_page: home_page_type = {
     title: "Empower Your Journey of Self-Growth",
     content: "Increase present-moment awareness, maintain energy levels, and build resilience and perseverance throughout your self-growth journey with Ripplet.",
-    button_text: "Participate",
+    button_text: "Join the beta",
+    button_link: "https://forms.gle/RYuNdLpzugrCPdA28",
 }
 
 export const cn_home_page: home_page_type = {
     title: "Ripplet让你在自我成长的路上不再孤单",
     content: "和Ripplet一起，提高对当下的觉察，维持能量水平，并在自我成长的旅程中培养韧性和毅力。",
-    button_text: "加入",
+    button_text: "加入试用",
+    button_link: "https://forms.gle/RYuNdLpzugrCPdA28",
 }
 
 export const en_journal: card_type = {
