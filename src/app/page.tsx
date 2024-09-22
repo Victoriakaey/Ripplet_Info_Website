@@ -5,8 +5,8 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="h-full flex items-center justify-center bg-gradient-to-r from-ripplet-blue to-ripplet-purple">
-      <div className="flex items-center justify-center mt-10">
+    <div className="w-full h-full min-h-screen flex lg:items-center lg:justify-center bg-ripplet-blue lg:bg-gradient-to-r lg:from-ripplet-blue lg:to-ripplet-purple">
+      <div className="flex lg:items-center justify-center mt-10">
         <div className="mb-10 flex flex-col gap-3">
           <HomePageHeading />
           <CardList />

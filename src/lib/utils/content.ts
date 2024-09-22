@@ -25,6 +25,7 @@ export type contents = {
     content: string[],
     button_text?: string,
     button_link?: string,
+    contact_us?: string,
 };
 
 export const en_navbar: navbar[] = [
@@ -139,7 +140,8 @@ export const en_about_us: contents = {
         "Through guided journaling prompts, community support, and expert-led challenges, Ripplet offers a comprehensive approach to personal development tailored specifically for young Chinese speakers.",
         "We celebrate the uniqueness of each journey and encourage meaningful interactions that inspire growth and resilience. We are dedicated to offering resources and guidance that promote mental well-being, helping you navigate life's challenges with confidence and clarity.",
         "Join us at Ripplet, where your journey toward a fulfilling and balanced life is supported every step of the way.",
-    ]
+    ],
+    contact_us: "Contact Us:",
 };
 
 export const cn_about_us: contents = {
@@ -148,7 +150,8 @@ export const cn_about_us: contents = {
         "Ripplet致力于让全球年轻华语群体在自我成长的旅途中不再感到孤单。我们通过日志引导、社区支持和专家辅助等方式，从情感和认知层面为大家赋能。",
         "我们提供一个安全私密的空间，来帮助你深入觉知内心情绪，记录自我成长历程，并提供相应资源来辅助你的行为和决策。我们会悉心倾听各类独特的故事，于个体的差异之中探寻群体间的关联，让力量得以传递。我们整合与心理健康相关的自救资源以及专业指导，协助您从容应对生活中的种种挑战。",
         "在这里，我们荡起的涟漪将成为同频的共振。我们在这共振的一圈圈陪伴中探索连接，在安全的连接中开启新的旅程。",
-    ]
+    ],
+    contact_us: "联系我们:",
 };
 
 

@@ -21,7 +21,7 @@ export default function CardList() {
   const world = language === "en" ? en_world : cn_world;
   const challenge = language === "en" ? en_challenge : cn_challenge;
   return (
-    <div className="flex items-center justify-center min-w-full gap-14">
+    <div className="flex flex-col lg:flex-row items-center justify-center min-w-full gap-14 p-5 lg:p-0">
       <Card
         card_content={journal}
         image={guided_journaling}

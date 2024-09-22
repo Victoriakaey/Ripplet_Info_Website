@@ -14,7 +14,7 @@ interface contentProps {
 export default function Content(props: contentProps) {
   return (
     <div
-      className={`flex justify-center items-center gap-20 text-ripplet-text ${
+      className={`flex flex-col lg:flex-row lg:justify-center lg:items-center gap-20 text-ripplet-text ${
         props.reverse ? "flex-row-reverse" : ""
       }`}
     >
