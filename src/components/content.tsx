@@ -14,7 +14,7 @@ interface contentProps {
 export default function Content(props: contentProps) {
   return (
     <div
-      className={`flex flex-col lg:flex-row lg:justify-center lg:items-center gap-20 text-ripplet-text ${
+      className={`flex flex-col md:flex-row lg:justify-center lg:items-center gap-10 lg:gap-20 text-ripplet-text ${
         props.reverse ? "flex-row-reverse" : ""
       }`}
     >
@@ -22,17 +22,17 @@ export default function Content(props: contentProps) {
         src={props.image}
         alt={props.image_alt}
         width={props.image_width}
-        className="select-none"
+        className="w-full max-w-xs lg:max-w-md h-auto object-contain mx-auto select-none"
       />
       <div>
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-6 px-5 lg:px-0">
           <div className="text-4xl font-semibold">{props.contents.title}</div>
           {props.contents.content.map((content, index) => (
-            <div key={index}>{content}</div>
+            <div key={index} className="lg:text-lg">{content}</div>
           ))}
         </div>
         {props.contents.button_link && props.contents.button_text ? (
-          <div className="mt-14">
+          <div className="mt-14 ml-5">
             <Link
               href={props.contents.button_link}
               target="_blank"

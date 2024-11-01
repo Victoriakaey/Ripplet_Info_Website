@@ -10,14 +10,16 @@ export default function About() {
   const { language } = useContext(LanguageContext);
   const contents = language === "en" ? en_about_us : cn_about_us;
   return (
-    <main className="h-screen flex flex-col justify-center px-6 py-40 lg:px-56 lg:py-3">
-      <Content
-        image={about_ripplet_image}
-        image_alt="about ripplet image"
-        image_width={500}
-        contents={contents}
-      />
-      <p className="flex lg:justify-end text-sm mr-6 text-ripplet-text gap-1">
+    <main className="min-h-screen flex flex-col justify-center px-4 py-10 ">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-20">
+        <Content
+          image={about_ripplet_image}
+          image_alt="about ripplet image"
+          image_width={500}
+          contents={contents}
+        />
+      </div>
+      <div className="flex items-center justify-end mx-4 sm:mx-6 text-ripplet-text gap-1 mt-4">
         {contents.contact_us}
         <a
           href="mailto:ripplet.wellness@gmail.com"
@@ -25,8 +27,10 @@ export default function About() {
         >
           ripplet.wellness@gmail.com
         </a>
-      </p>
-      <ContactButtons />
+      </div>
+      <div className="flex justify-center mt-4">
+        <ContactButtons />
+      </div>
     </main>
   );
 }

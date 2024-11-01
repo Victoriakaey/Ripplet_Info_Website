@@ -10,14 +10,14 @@ export default function HomePageHeading() {
   const { language } = useContext(LanguageContext);
   const content = language === "en" ? en_home_page : cn_home_page;
   return (
-    <div className="flex flex-col-reverse lg:flex-row items-center justify-center text-ripplet-text">
-      <div className="flex flex-col w-[44rem] gap-5 ml-4 items-center lg:items-start">
+    <div className="mx-[16%] flex flex-col-reverse xl:flex-row items-center justify-center text-ripplet-text">
+      <div className="flex flex-col gap-5 ml-4 items-center xl:items-start">
         <p className="font-semibold text-4xl">{content.title}</p>
         <p className="text-lg italic">{content.content}</p>
         <Link
           href={content.button_link}
           target="_blank"
-          className="bg-ripplet-button py-3 px-7 mt-4 lg:mt-6 mb-4 lg:mb-0 rounded-3xl font-bold select-none w-full lg:w-auto text-center "
+          className="bg-ripplet-button py-3 px-7 mt-4 lg:mt-6 mb-4 lg:mb-0 rounded-3xl font-bold select-none w-full lg:w-auto text-center"
         >
           {content.button_text}
         </Link>

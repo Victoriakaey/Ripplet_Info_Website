@@ -19,7 +19,7 @@ export default function Participate() {
     language === "en" ? en_facilitators : cn_facilitators;
   return (
     <main className="min-h-screen mb-2 flex flex-col items-center justify-center">
-      <div className="px-40 py-72">
+      <div className="lg:mt-32 px-4 py-20 md:px-5 lg:px-20 md:py-40">
         <Content
           image={storytellers_image}
           image_alt="storytellers image"
@@ -27,7 +27,7 @@ export default function Participate() {
           contents={storytellers_contents}
         />
       </div>
-      <div className="px-52 py-56">
+      <div className="lg:mb-32 px-4 py-20 md:px-5 lg:px-20 md:py-40">
         <Content
           image={facilitators_image}
           image_alt="facilitators image"

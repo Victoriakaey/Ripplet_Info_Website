@@ -13,7 +13,7 @@ interface cardProps {
 
 export default function Card(props: cardProps) {
   return (
-    <div className="bg-white lg:w-[23rem] lg:h-[23rem] rounded-2xl shadow-md p-11 flex flex-col gap-2 items-center justify-center text-ripplet-text">
+    <div className="bg-white xl:w-[23rem] xl:h-[23rem] rounded-2xl shadow-md p-11 flex flex-col gap-2 items-center justify-center text-ripplet-text">
       <p className="text-2xl font-bold mb-4 -mt-2">
         {props.card_content.title}
       </p>
