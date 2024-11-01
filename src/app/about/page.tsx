@@ -19,15 +19,6 @@ export default function About() {
           contents={contents}
         />
       </div>
-      <div className="flex mb-8 items-center justify-end mx-4 sm:mx-6 text-ripplet-text gap-1 mt-4">
-        {contents.contact_us}
-        <a
-          href="mailto:ripplet.wellness@gmail.com"
-          className="text-ripplet-button"
-        >
-          ripplet.wellness@gmail.com
-        </a>
-      </div>
       <div className="flex justify-center mt-4">
         <ContactButtons />
       </div>
