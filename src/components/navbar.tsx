@@ -15,14 +15,14 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="fixed w-full bg-white z-50 select-none px-9">
+    <div className="fixed w-full bg-white z-50 select-none px-1 lg:px-2">
       <div className="h-16 flex justify-between items-center mb-2">
         <Link href="/">
           <Image
             src={logo}
             alt="ripplet logo image"
-            width={200}
-            className="ml-4 md:ml-6"
+            // width={200}
+            className="ml-4 md:ml-6 w-3/4 h-auto md:mt-1 md:w-4/5 lg:w-full"
           />
         </Link>
         {/* Hamburger Menu Icon */}
@@ -43,7 +43,7 @@ export default function Navbar() {
               // target={item.button ? "_blank" : ""}
               className={
                 item.button
-                  ? "bg-ripplet-button rounded-full py-2 px-7 text-ripplet-text font-semibold mt-3 mb-1 hover:bg-red-400 hover:text-white"
+                  ? "-mr-4 bg-ripplet-button rounded-full py-2 px-7 text-ripplet-text font-semibold mt-3 mb-1 hover:bg-red-400 hover:text-white"
                   : "font-semibold mt-5 hover:text-red-400"
               }
             >

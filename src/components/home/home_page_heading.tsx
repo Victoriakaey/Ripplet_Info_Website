@@ -12,8 +12,8 @@ export default function HomePageHeading() {
   return (
     <div className="mx-[16%] flex flex-col-reverse xl:flex-row items-center justify-center text-ripplet-text">
       <div className="flex flex-col gap-5 ml-4 items-center xl:items-start">
-        <p className="font-semibold text-4xl">{content.title}</p>
-        <p className="text-lg italic">{content.content}</p>
+        <p className="font-semibold text-xl text-center xl:text-start lg:text-4xl">{content.title}</p>
+        <p className="text-sm text-center lg:text-lg xl:text-start italic">{content.content}</p>
         <Link
           href={content.button_link}
           target="_blank"
