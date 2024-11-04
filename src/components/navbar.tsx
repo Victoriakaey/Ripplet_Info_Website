@@ -55,7 +55,7 @@ export default function Navbar() {
       </div>
       {/* Mobile Menu */}
       <div
-        className={`md:hidden flex flex-col items-center absolute top-16 left-0 w-full bg-white shadow-md transition-transform duration-300 ${
+        className={`md:hidden flex flex-col items-center absolute top-[3.4rem] left-0 w-full bg-white shadow-md transition-transform duration-300 ${
           menuOpen ? "max-h-screen" : "max-h-0"
         } overflow-hidden`}
       >

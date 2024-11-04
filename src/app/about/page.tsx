@@ -11,7 +11,7 @@ export default function About() {
   const contents = language === "en" ? en_about_us : cn_about_us;
   return (
     <main className="min-h-screen flex flex-col justify-center px-6 py-10 ">
-      <div className="mt-8 flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-20">
+      <div className="mt-8 mb-8 flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-20">
         <Content
           image={about_ripplet_image}
           image_alt="about ripplet image"
