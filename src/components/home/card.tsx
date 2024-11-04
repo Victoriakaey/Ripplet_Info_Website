@@ -1,4 +1,3 @@
-// TODO: still need to make responsiveness
 import React from "react";
 import { card_type } from "@/lib/utils/content";
 import Image, { StaticImageData } from "next/image";
@@ -24,7 +23,7 @@ export default function Card(props: cardProps) {
         height={props.image_height}
         className="select-none"
       />
-      <p className="italic font-semibold mb-1 mt-1">
+      <p className="italic font-semibold text-center mb-1 mt-1">
         {props.card_content.sub_title}
       </p>
       <p className="font-light text-center text-sm">

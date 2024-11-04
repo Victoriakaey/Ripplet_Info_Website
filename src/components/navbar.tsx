@@ -16,13 +16,14 @@ export default function Navbar() {
 
   return (
     <div className="fixed w-full bg-white z-50 select-none px-1 lg:px-2">
-      <div className="h-16 flex justify-between items-center mb-2">
+      <div className="h-10 mt-2 md:mt-0 md:h-14 flex justify-between items-center mb-2">
         <Link href="/">
           <Image
             src={logo}
             alt="ripplet logo image"
-            // width={200}
-            className="ml-4 md:ml-6 w-3/4 h-auto md:mt-1 md:w-4/5 lg:w-full"
+            width={200}
+            height={100}
+            className="ml-4 md:ml-6 w-[60%] h-auto md:mt-2 md:w-[75%]"
           />
         </Link>
         {/* Hamburger Menu Icon */}

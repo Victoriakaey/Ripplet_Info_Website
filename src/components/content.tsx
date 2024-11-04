@@ -26,9 +26,13 @@ export default function Content(props: contentProps) {
       />
       <div>
         <div className="flex flex-col gap-6 px-5 lg:px-0">
-          <div className="mb-4 lg:mb-10 text-4xl font-semibold">{props.contents.title}</div>
+          <div className="mb-4 lg:mb-10 text-4xl font-semibold">
+            {props.contents.title}
+          </div>
           {props.contents.content.map((content, index) => (
-            <div key={index} className="lg:text-lg">{content}</div>
+            <div key={index} className="lg:text-lg">
+              {content}
+            </div>
           ))}
         </div>
         {props.contents.button_link && props.contents.button_text ? (
@@ -44,7 +48,7 @@ export default function Content(props: contentProps) {
         ) : (
           <></>
         )}
-        {props.image_alt === "about ripplet image" ? 
+        {props.image_alt === "about ripplet image" ? (
           <div className="text-sm flex items-center lg:mt-24 lg:justify-end mx-5 text-ripplet-text gap-1 mt-8">
             <p>{props.contents.contact_us}</p>
             <a
@@ -53,8 +57,10 @@ export default function Content(props: contentProps) {
             >
               ripplet.wellness@gmail.com
             </a>
-          </div>: <></>
-        }
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
